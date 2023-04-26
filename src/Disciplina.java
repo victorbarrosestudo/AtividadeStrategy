@@ -29,7 +29,8 @@ public class Disciplina {
     }
 
     public String getSituacao() {
-        return this.CalcMedia.Situacao(this.Media);
+        this.Situacao = this.CalcMedia.Situacao(this.Media);
+        return Situacao;
     }
 
     public ICalcMedia getCalcMedia() {
